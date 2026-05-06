@@ -323,5 +323,6 @@ def handle_disconnect():
     print('User disconnected:', request.sid)
 
 if __name__ == '__main__':
-    socketio.run(app, port=3000, host='0.0.0.0', allow_unsafe_werkzeug=True, debug=True)
+    port = int(os.environ.get('PORT', 3000))
+    socketio.run(app, port=port, host='0.0.0.0', allow_unsafe_werkzeug=True, debug=False)
 
