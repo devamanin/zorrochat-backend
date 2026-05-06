@@ -1,5 +1,5 @@
-Flask==3.0.3
-Flask-SocketIO==5.3.6
-Flask-Cors==4.0.1
-gunicorn[eventlet]>=23.0.0
-eventlet>=0.41.0
+Flask
+Flask-SocketIO
+Flask-Cors
+gunicorn
+eventlet
