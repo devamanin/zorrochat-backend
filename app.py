@@ -1,3 +1,6 @@
+import gevent.monkey
+gevent.monkey.patch_all()
+
 from flask import Flask, request, jsonify
 from flask_socketio import SocketIO, join_room, leave_room, emit
 from flask_cors import CORS
